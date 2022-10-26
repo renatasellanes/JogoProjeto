@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+#container {
+    height: 500px;
+    width: 1500px;
+    position: relative;
+    overflow: hidden;
+}
+
+#container #dino {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    bottom: 28px;
+    left: 20px;
+    
+}
+
+#container #dino img {
+    height: 90px;
+    width: 90px;
+
+}
+
+.jumpDino {
+    animation: animateDino 0.5s linear infinite;
+}
+
+@keyframes animateDino {
+    0%,100%{
+        bottom: 30px;
+    }
+    45%,55%{
+        bottom: 200px
+    }
+
+}
+
+#container #cactosBig {
+    height: 100px;
+    width: 135px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+    animation: animateCactusBig 6s linear infinite;
+
+    
+}
+
+#container #cactosBig img {
+    height: 80px;
+    width: 125px;
+}
+
+
+
+@keyframes animateCactusBig {
+    0% {
+        right: 125px;
+    }
+    100%
+    {
+        right: 100%
+    }
+
+}
+
+
+
+
+
+
+
