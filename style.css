@@ -19,8 +19,8 @@ body {
 }
 
 #container #dino {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
     position: absolute;
     bottom: 28px;
     left: 20px;
@@ -28,8 +28,8 @@ body {
 }
 
 #container #dino img {
-    height: 90px;
-    width: 90px;
+    height: 70px;
+    width: 70px;
 
 }
 
@@ -48,12 +48,12 @@ body {
 }
 
 #container #cactosBig {
-    height: 100px;
-    width: 135px;
+    height: 80px;
+    width: 125px;
     position: absolute;
     bottom: 20px;
     right: -20px;
-    animation: animateCactusBig 6s linear infinite;
+
 
     
 }
@@ -61,6 +61,10 @@ body {
 #container #cactosBig img {
     height: 80px;
     width: 125px;
+}
+
+.movimentoCactusBig {
+    animation: animateCactusBig 6s linear infinite;
 }
 
 
@@ -75,6 +79,118 @@ body {
     }
 
 }
+
+#container #passaro {
+    height: 200px;
+    width: 40px;
+    position: absolute;
+    bottom: 20px;
+    right: -20px;
+
+    
+}
+
+#container #passaro img {
+    height: 60px;
+    width: 60px;
+
+}
+
+.movimentoPassaro {
+    animation: animatePassaro 10s linear infinite;
+}
+
+@keyframes animatePassaro {
+    0% {
+        right: 125px;
+    }
+    100%
+    {
+        right: 100%
+    }
+
+}
+
+#container #terra {
+    height: 30px;
+    width: 1200px;
+    position: absolute;
+    bottom: 0;
+}
+
+#container #terra img {
+    height: 30px;
+    width: 2000px;
+    position: absolute;
+    left: 0;
+
+}
+
+.moviemntaTerra {
+    animation: terraAnimate 1s linear infinite
+}
+
+@keyframes terraAnimate {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -800px;
+    }
+}
+
+#container #ceu {
+    height: 150px;
+    width: 1200px;
+    border-radius: 40px;
+    position: absolute;
+    top: 30px;
+}
+
+#container #ceu img {
+    height: 100px;
+    width: 2000px;
+    position: absolute;
+    right: -2000px;
+
+}
+
+.movimentaCe{
+    animation: ceuAnimate 4s linear infinite
+}
+
+@keyframes ceuAnimate {
+    0% {
+        right: -2000px;
+    }
+
+    100% {
+        right: 100%;
+    }
+}
+
+/* SCORE */
+
+#score{
+    height: auto;
+    width: auto;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+#gameOver {
+    display: none;
+    font-size:70px ;
+    position: absolute;
+    left:calc(50% - 181px);
+    top: calc(50% - 40px);
+    width: 362px;
+    height: 80px;
+    color: rgba(122, 4, 4, 0.959);
+}
+
 
 
 
