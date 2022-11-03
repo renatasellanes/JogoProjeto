@@ -24,25 +24,25 @@ body {
     position: absolute;
     bottom: 28px;
     left: 20px;
-    
 }
 
 #container #dino img {
     height: 70px;
     width: 70px;
+    
 
 }
 
 .jumpDino {
-    animation: animateDino 0.5s linear infinite;
+    animation: animateDino 500ms linear infinite;
 }
 
 @keyframes animateDino {
     0%,100%{
-        bottom: 30px;
+        bottom: 28px;
     }
     45%,55%{
-        bottom: 200px
+        bottom: 160px
     }
 
 }
@@ -53,9 +53,7 @@ body {
     position: absolute;
     bottom: 20px;
     right: -20px;
-
-
-    
+   
 }
 
 #container #cactosBig img {
@@ -64,7 +62,7 @@ body {
 }
 
 .movimentoCactusBig {
-    animation: animateCactusBig 6s linear infinite;
+    animation: animateCactusBig 1s linear infinite;
 }
 
 
@@ -86,7 +84,6 @@ body {
     position: absolute;
     bottom: 20px;
     right: -20px;
-
     
 }
 
@@ -156,7 +153,7 @@ body {
 
 }
 
-.movimentaCe{
+.movimentaCeu{
     animation: ceuAnimate 4s linear infinite
 }
 
