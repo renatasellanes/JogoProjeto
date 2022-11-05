@@ -7,16 +7,21 @@ let ceu = document.querySelector("#ceu");
 let terra = document.querySelector("#terra");
 let score = document.querySelector("#score");
 let gameOver = document.querySelector("#gameOver");
+let startInstrucion = document.querySelector("#startInstrucion");
 
 
 // Declarando as variaveis do score:
 let interval = 0;
 let playerScore = 0;
+let scoreadd;
 
 // função Score:
 const scoreCounter = () => {
-    playerScore++;
-    score.innerHTML = `Score <b>${playerScore}</b>`;
+    if(scoreadd == 'add'){
+        playerScore++;
+        score.innerHTML = `Score <b>${playerScore}</b>`;
+
+    }
 }
 
 
@@ -27,6 +32,9 @@ window.addEventListener("keydown", (start)=> {
 
     if(start.code == "Enter")
     {
+        scoreadd = 'add';
+
+
         gameOver.style.display = "none";
         cactosBig.classList.add("movimentoCactusBig");
         terra.classList.add("moviemntaTerra");
@@ -50,15 +58,20 @@ window.addEventListener("keydown", (e)=>{
         },500)
     }
 });
+
+
 //Game Over
 let result = setInterval(()=> {
 
     const cactosPosition =+window.getComputedStyle(cactosBig).left.replace('px','')
     const dinoPosition = +window.getComputedStyle(dino).bottom.replace('px', '')
+    const dinoPositionLeft =+window.getComputedStyle(dino).left.replace('px','')
 
-    if ( cactosPosition <=50 && cactosPosition > 0 && dinoPosition <=80) {
+    if ( cactosPosition <=50 && cactosPosition > 0 && dinoPosition <=80 && dinoPositionLeft <=70) {
         //console.log("Game Over")
-
+        playerScore = 0;
+        interval = 0;
+        scoreadd = 'no';    
         
         gameOver.style.display="block";
         cactosBig.classList.remove("movimentoCactusBig");

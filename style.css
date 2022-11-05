@@ -61,24 +61,26 @@ body {
     width: 110px;
     position: absolute;
     bottom: 20px;
-    right: -100px;
+    right: -20px;
+
 
 }
 
 #container #cactosBig img {
     height: 80px;
-    width: 125px;
+    width: 110px;
+
 }
 
 .movimentoCactusBig {
-    animation: animateCactusBig 3s linear infinite;
+    animation: animateCactusBig 2s linear infinite;
 }
 
 
 
 @keyframes animateCactusBig {
     0% {
-        right: 125px;
+        right: -125px;
     }
     100%
     {
@@ -93,6 +95,7 @@ body {
     width: 1500px;
     position: absolute;
     bottom: 0;
+    
 }
 
 #container #terra img {
@@ -101,10 +104,11 @@ body {
     position: absolute;
     left: 0;
 
+
 }
 
 .moviemntaTerra {
-    animation: terraAnimate 1s linear infinite
+    animation: terraAnimate 3s linear infinite
 }
 
 @keyframes terraAnimate {
@@ -113,7 +117,7 @@ body {
     }
 
     100% {
-        left: -900px;
+        left: -600px;
     }
 }
 
@@ -123,6 +127,7 @@ body {
     border-radius: 40px;
     position: absolute;
     top: 30px;
+    
 }
 
 #container #ceu img {
@@ -134,7 +139,7 @@ body {
 }
 
 .movimentaCeu{
-    animation: ceuAnimate 4s linear infinite
+    animation: ceuAnimate 2s linear infinite
 }
 
 @keyframes ceuAnimate {
@@ -167,6 +172,9 @@ body {
     height: 80px;
     color: rgba(122, 4, 4, 0.959);
 }
+
+
+
 
 
 
